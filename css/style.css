@@ -1028,6 +1028,32 @@ legend {
 
 }
 
+.score-circle.score-low {
+    border-color: #d96c6c;
+    background-color: rgba(217, 108, 108, 0.12);
+   
+}
+
+
+.score-circle.score-medium {
+    border-color: #e2a65a;
+    background-color: rgba(226, 166, 90, 0.12);
+   
+}
+
+
+.score-circle.score-good {
+    border-color: #83b997;
+    background-color: rgba(131, 185, 151, 0.12);
+   
+}
+
+
+.score-circle.score-excellent {
+    border-color: #4caf78;
+    background-color: rgba(76, 175, 120, 0.15);
+    
+}
 
 .score-circle small {
 
@@ -1960,7 +1986,7 @@ body.dark-mode {
 
     --off-white: #14231b;
 
-    --pale-green: #15251c;
+    --pale-green: #284935;
 
     --light-green: #1c3828;
 
@@ -1989,12 +2015,15 @@ body.dark-mode .hero {
     background:
         linear-gradient(
             135deg,
-            #15271d,
+            #284635,
             #101c16
         );
 
 }
 
+body.dark-mode .hero h1 {
+    color: #e8f3eb;
+}
 
 body.dark-mode .section-heading h2,
 body.dark-mode .feature-card h3,
@@ -2015,26 +2044,25 @@ body.dark-mode .calculator-form-container {
 
 }
 
+body.dark-mode .calculator-form-container legend {
+    color: #e8f3ebaf;
+}
 
 body.dark-mode .button-secondary,
 body.dark-mode .theme-toggle {
 
     background: #14231b;
-
 }
 
 
 body.dark-mode .theme-toggle {
 
     color: #bfe0c8;
-
 }
-
 
 body.dark-mode table {
 
     background: #122119;
-
 }
 
 

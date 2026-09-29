@@ -12,6 +12,9 @@ const impactForm =
 const scoreElement =
     document.getElementById("score");
 
+const scoreCircle =
+    document.querySelector(".score-circle");
+
 const scoreStatus =
     document.getElementById("score-status");
 
@@ -266,7 +269,33 @@ impactForm.addEventListener("submit", function (event) {
     scoreElement.textContent =
         overallScore;
 
+     /* -----------------------------------------
+    Update score circle color----------------------------------- */
 
+    scoreCircle.classList.remove(
+        "score-low",
+        "score-medium",
+        "score-good",
+        "score-excellent"
+    );
+
+    if (overallScore < 40) {
+
+        scoreCircle.classList.add("score-low");
+
+    } else if (overallScore < 60) {
+
+        scoreCircle.classList.add("score-medium");
+
+    } else if (overallScore < 80) {
+
+        scoreCircle.classList.add("score-good");
+
+    } else {
+
+        scoreCircle.classList.add("score-excellent");
+
+    }
     /* -----------------------------------------
        Determine status
     ----------------------------------------- */
